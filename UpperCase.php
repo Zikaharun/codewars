@@ -1,6 +1,6 @@
 <?php
 
-makeUpperCase(string $input ) {
+function makeUpperCase(string $input ) {
   
   $input = strtoupper($input);
   
