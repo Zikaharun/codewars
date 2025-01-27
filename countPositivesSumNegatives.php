@@ -3,6 +3,10 @@
 function countPositivesSumNegatives($input) {
   $positiveNumbers = [];
   $negativeNumbers = [];
+
+    if (empty($input)) {
+    return array();
+  }
   
   foreach ($input as $number) {
     
