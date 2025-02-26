@@ -1,0 +1,15 @@
+<?php
+
+function getMiddle($text) {
+  $arrText = str_split($text);
+  $length = count($arrText);
+
+  if ($length % 2 === 1) {
+      $middleText = floor($length / 2);
+      return $arrText[$middleText];
+} else {
+      $middle1text = $length / 2 - 1;
+      $middle2text = $length / 2;
+
+      return implode("", [$arrText[$middle1text], $arrText[$$middle2text]]);
+}
